@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    consoleId="cq-tools-sites-selecto"
+    contentPath="/content"
+    currentView="${state[&quot;shell.collectionpage.layoutId&quot;].string}"
+    jcr:mixinTypes="[sling:VanityPath]"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Selecto"
+    modeGroup="granite-selecto-collection"
+    pageURITemplate="/etc/selecto.html"
+    sling:resourceType="granite/ui/components/shell/page"
+    targetCollection=".granite-selecto-collection">
+    <head jcr:primaryType="nt:unstructured">
+        <clientlibs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+            categories="[coralui3,granite.ui.coral.foundation,jquery,underscore,selecto.main]"/>
+    </head>
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container"
+        granite:class="selecto__full-height">
+            <items
+                jcr:primaryType="nt:unstructured">
+                <content
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="selecto/components/content/main"/>
+            </items>
+    </content>
+    <actions jcr:primaryType="nt:unstructured">
+        <secondary jcr:primaryType="nt:unstructured">
+            <add
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/button"
+                text="Add New DataSource"
+                granite:id="ds-add-new-btn"
+                variant="primary"
+                x-cq-linkchecker="skip"/>
+        </secondary>
+    </actions>
+    <title
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/text"
+        text="Manage Dropdown DataSources "/>
+</jcr:root>

@@ -1,0 +1,24 @@
+<coral-dialog id="ds-dialog">
+    <coral-dialog-header>Add New DataSource</coral-dialog-header>
+    <coral-dialog-content>
+        <form class="coral-Form coral-Form--aligned u-columnLarge">
+            <section class="coral-Form-fieldset">
+                <div class="coral-Form-fieldwrapper">
+                    <label class="coral-Form-fieldlabel" id="ds-id-label">DataSource Name</label>
+                    <input is="coral-textfield" data-selecto-alphanumeric-dashes-only="" data-required="" id="ds-id" class="coral-Form-field" placeholder="Enter DS Name" name="name" labelledby="ds-id-label">
+                    <coral-icon class="coral-Form-fieldinfo" icon="infoCircle" size="S" id="coral-form-aligned-textfield-fieldinfo"></coral-icon>
+                    <coral-tooltip variant="info" placement="right" target="#coral-form-aligned-textfield-fieldinfo">can only contain alphanumics and dashes</coral-tooltip>
+                </div>
+            </section>
+        </form>
+    </coral-dialog-content>
+    <coral-dialog-footer class="coral-Dialog-footer">
+        <button id="cancelButton" is="coral-button" variant="secondary" coral-close="" class="coral-Button coral-Button--secondary"
+            size="M">
+            <coral-button-label>Cancel</coral-button-label>
+        </button>
+        <button id="addButton" is="coral-button" variant="primary" class="coral-Button coral-Button--primary" size="M">
+            <coral-button-label>Add</coral-button-label>
+        </button>
+    </coral-dialog-footer>
+</coral-dialog>

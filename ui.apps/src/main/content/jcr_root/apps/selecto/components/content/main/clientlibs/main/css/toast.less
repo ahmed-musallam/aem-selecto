@@ -1,0 +1,32 @@
+// mixin to generate css for toast based on child location
+@counter : 1;
+@time: 0.4s;
+.toast-loop (@length; @i) when (@i < @length) {
+    .toast.toast__slide-in:nth-child(@{i}){
+       bottom : ((@i - 1)*4em+1em);
+     }
+  .toast-loop(@length:@length,@i:@i+1);
+}
+#cui-toast{
+ // call the mixin
+ .toast-loop(@length:6,@i:1);
+
+  .toast {
+    position: absolute;
+    left: 1em;
+    bottom: -1em;
+    opacity: 0;
+    -webkit-transition: bottom @time , opacity @time;
+    -moz-transition: bottom @time, opacity @time;
+    -o-transition: bottom @time, opacity @time;
+    transition: bottom @time, opacity @time;
+  }
+  .toast.toast__slide-in {
+    opacity: 1;
+  }
+
+  .toast.toast__slide-out{
+    bottom: -1em;
+    opacity: 0;
+  }
+}

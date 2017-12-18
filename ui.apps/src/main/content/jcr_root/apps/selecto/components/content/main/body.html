@@ -1,0 +1,22 @@
+<script type="text/template" id="selecto-option-template">
+    <div class="coral-Form-fieldwrapper zero-margin">
+        <label class="coral-Form-fieldlabel" id="selecto-txt-val-label" for="coral-id-2">Option Text / Value</label>
+        <input is="coral-textfield" class="coral-Form-field coral-Textfield selecto-txt" placeholder="Enter Text" name="name" labelledby="selecto-txt-val-label" aria-labelledby="selecto-txt-val-label" aria-invalid="false">
+        <div class="selecto-slash"> /</div>
+        <input is="coral-textfield" class="coral-Form-field coral-Textfield selecto-val" placeholder="Enter value" name="name" labelledby="selecto-txt-val-label" aria-labelledby="selecto-txt-val-label" aria-invalid="false">
+    </div>
+</script>
+
+<form class="coral-Form coral-Form--aligned u-columnLarge selecto-form" id='selecto-option-form'>
+    <div class="selecto-form__header">
+        <div class="selecto-form__title">
+            <h1 id="selecto-selected-title" class="selecto-float-clear coral-Heading coral-Heading--1" style='text-align: center;'></h1>
+            <h4 class="selecto-float-clear coral-Heading coral-Heading--4">Use sling:resourceSuperType = <span id="selcto-datasource-path"></span>/<span id="selcto-datasource-name"></span>/options</h4>
+        </div>
+        
+        <button type="button" class="selecto-float-right" id="save-options" is="coral-button" variant="cta" icon="save" iconsize="XS" size="M">Save Options</button>        
+    </div>
+    <section class="coral-Form-fieldset zero-margin" id="selecto-option-fieldset"></section> 
+</form>
+<div id="cui-toast"></div>
+<coral-wait size="M" id="selecto-wait" hidden></coral-wait>
