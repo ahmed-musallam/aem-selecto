@@ -49,6 +49,8 @@ let's create a new selecto datasource and add countries to it:
 
 > selecto shows you the `sling:resourceSuperType` to use, in our example it is: `/content/selecto/countries/options`
 
+> You can change the path from the default `/content/selecto` in the OSGI config: http://localhost:4502/system/console/configMgr/com.ahmedmusallam.selecto.servlets.DataSourceServlet
+
 Now in your component's dialog, the xml for the select changes to:
 
 ```xml
