@@ -1,7 +1,7 @@
 # AEM Selecto
 
 This a content package project generated using the AEM Multimodule Lazybones template.
-You can download this package from github's release page, or clone and build from source.  
+You can download the latest package from [release page](https://github.com/ahmed-musallam/aem-selecto/releases), or clone and build from source.  
 
 ## Building
 
