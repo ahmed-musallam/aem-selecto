@@ -1,5 +1,4 @@
 # AEM Selecto
-> ### IMPORTANT: This was developed and tested on AEM 6.3
 
 This a content package project generated using the AEM Multimodule Lazybones template.
 You can download this package from github's release page, or clone and build from source.  
@@ -66,9 +65,4 @@ result:
 
 Now if you go back to selecto page and add/remove/reorder options, they will be reflected on the component dropdown! no deployment neccessary.
 
-
-
-
-
-
-
+you can do the same for other dropdowns too. The UI is responsive and easy to use.
