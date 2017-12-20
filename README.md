@@ -1,3 +1,5 @@
+> **IMPORTANT:** This tool was developed on AEM 6.3 and will not work on older versions of AEM. I will be adding support for older versions soon, stay tuned!
+
 # AEM Selecto
 
 This a content package project generated using the AEM Multimodule Lazybones template.
