@@ -277,7 +277,8 @@
             });
         });
         $.subscribe("selecto-delete-ds", function(e, id){
-            selectoHttpSrv.delete(id)
+            // delete wrapped in ['*'] because of an issue with YUI compressor (https://github.com/yui/yuicompressor/issues/189)
+            selectoHttpSrv['delete'](id)
             .always(loadDataSourcesToggleForm)
             .done(function(){
                 toastSrv.success('Success', 'Deleted DataSource '+$dsId.value);

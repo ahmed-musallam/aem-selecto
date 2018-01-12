@@ -96,10 +96,10 @@
     /**
      * Sends a PUT request with first selector set to the id 
      * @param {*} id The item id to be deleted
-     * @param {*} data The data for the item
      * @param {*} additionalSettings additional settings for jQuery ajax request
      */
-    HttpService.prototype.delete = function(id, additionalSettings){
+    // delete wrapped in ['*'] because of an issue with YUI compressor (https://github.com/yui/yuicompressor/issues/189)
+    HttpService.prototype['delete'] = function(id, additionalSettings){
         return this._send("DELETE", id, null, additionalSettings);
     };
 
